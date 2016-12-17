@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.24.1'
+    // For Jersey REST implementation
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '2.23.2'
+    // For json support in Jersey
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.23.2'
+    // For JSON libraries
+    compile group: 'org.json', name: 'json', version: '20160810'
+    testCompile 'junit:junit:4.11'
+}
