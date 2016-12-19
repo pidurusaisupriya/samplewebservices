@@ -5,6 +5,8 @@ repositories {
     mavenCentral()
 }
 
+// Adding a conflict comment
+
 dependencies {
     //compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.24.1'
     // For Jersey REST implementation
